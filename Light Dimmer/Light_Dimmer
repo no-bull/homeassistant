@@ -2,8 +2,6 @@
 const byte zcPin = 5;
 const byte pwmPin = 14;  
 
-byte fade = 1;
-byte state = 1;
 byte tarBrightness = 0;
 byte curBrightness = 0;
 byte zcState = 0;   // 0 = ready; 1 = processing;
