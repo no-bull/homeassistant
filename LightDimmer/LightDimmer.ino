@@ -8,6 +8,8 @@ byte zcState = 0;   // 0 = ready; 1 = processing;
 bool modeOff;       // false = on; true = off used to prevent un-necassary writes to output
 bool modeOn;        // false = on; true = off used to prevent un-necassary writes to output
 
+void ICACHE_RAM_ATTR zcDetectISR ();//required for proper interrupting
+
 void setup() {
   Serial.begin(115200);   
   pinMode(zcPin, INPUT_PULLUP);
